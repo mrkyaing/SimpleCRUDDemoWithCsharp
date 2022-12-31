@@ -1,0 +1,8 @@
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\bin\Debug\SimpleCRUDDemo.exe.config
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\bin\Debug\SimpleCRUDDemo.exe
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\bin\Debug\SimpleCRUDDemo.pdb
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\obj\Debug\SimpleCRUDDemo.csproj.AssemblyReference.cache
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\obj\Debug\SimpleCRUDDemo.csproj.SuggestedBindingRedirects.cache
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\obj\Debug\SimpleCRUDDemo.csproj.CoreCompileInputs.cache
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\obj\Debug\SimpleCRUDDemo.exe
+E:\pfc\HelloConsoleApp\SimpleCRUDDemo\obj\Debug\SimpleCRUDDemo.pdb
