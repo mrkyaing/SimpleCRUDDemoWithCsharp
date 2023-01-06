@@ -9,6 +9,7 @@ namespace SimpleCRUDDemo
 {
     public class DBOperation
     {
+        //Reterive prcess from database 
         public List<UserModel> GetAllUser() {
             List<UserModel> users=new List<UserModel>();
             SqlConnection sqlConnection = DatabaseConnection.GetSqlConnection();
@@ -33,6 +34,34 @@ namespace SimpleCRUDDemo
             string query = $"insert into users values({user.Id},'{user.Name}','{user.Email}','{user.Password}','{user.IsDelete}','{user.CreatedDate}')";
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);//create the sqlCommand Object
            int result= sqlCommand.ExecuteNonQuery();
+            if (result > 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }//end of saveUser method
+
+        //U-Update process for user data 
+        public bool UpdateUser(UserModel user) {
+            SqlConnection sqlConnection = DatabaseConnection.GetSqlConnection();
+            string query = $"update users set Name='{user.Name}' ,Email='{user.Email}' where id={user.Id}";
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);//create the sqlCommand Object
+            int result = sqlCommand.ExecuteNonQuery();
+            if (result > 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }//end of updateUser Method 
+
+        //D-Delete process 
+        public bool DeleteUser(int userId) {
+            SqlConnection sqlConnection = DatabaseConnection.GetSqlConnection();
+            string query = $"delete from users where id={userId}";
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);//create the sqlCommand Object
+            int result = sqlCommand.ExecuteNonQuery();
             if (result > 0) {
                 return true;
             }
